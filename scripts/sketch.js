@@ -19,7 +19,10 @@ function centerCanvas() {
 function draw() {
   background(255, 250, 230);
   line(0, height - 100, width, height - 100);
-  stroke(255);
+  textFont('Avenir');
+  textAlign(CENTER, CENTER);
+  textSize(33);
+  text("Arrow keys to move, Z to jump", width/2, height/2 - 200);
   drawSprites();
   // checkEdges();
   playerMove();
